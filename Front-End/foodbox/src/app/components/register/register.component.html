@@ -1,0 +1,43 @@
+<br><br>
+<div class="login-form" >
+    <form   (ngSubmit) = "saveUser()">
+        <h2 class="text-center"><i class='fas fa-user-plus' style='font-size:48px;color:rgb(14, 13, 13)'></i><br>
+            Register</h2>       
+        <div class="form-group">
+            <input [(ngModel)] = "user.username" name = "username" type="text" class="form-control" placeholder="Enter Username" required="required">
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.email" name = "email" type="text" class="form-control" placeholder="Enter Email" required="required">
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.password" name = "password" type="password" class="form-control" placeholder="Enter Password" required="required">
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.phone" name = "phone" type="text" class="form-control" placeholder="Enter Phone Number" required="required">
+        </div>
+        <br>
+
+     <div class="form-group">
+            <input [(ngModel)] = "user.city" name = "city" type="text" class="form-control" placeholder="Enter City" required="required">
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.street" name = "street" type="text" class="form-control" placeholder="Enter Street" required="required">
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.zipcode" name = "zipcode" type="text" class="form-control" placeholder="Enter ZipCode" required="required">
+        </div>
+        <br>
+        
+
+        <div class="form-group" style="text-align: center;">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+               
+    </form>
+    <p class="text-center"><a routerLink="/login">Back to Login</a></p>
+</div>

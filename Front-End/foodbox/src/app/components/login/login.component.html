@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="login-form">
+    <form  (ngSubmit)="onSubmit()" >
+       
+        <h2 class="text-center"> <i class='fas fa-user-circle' style='font-size:48px;color:rgb(12, 12, 12)'text-center ></i><br>Login</h2>       
+        <div>
+        <div class="form-group">
+            <input [(ngModel)] = "user.username" name = "username" type="text" class="form-control " placeholder="Username" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <input [(ngModel)] = "user.password" name = "password"  type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </div>
+    </div>
+    </form>
+    <p class="text-center" style="padding-bottom: 33%;"><a routerLink="/register">Create an Account</a></p>
+
+     
+</div>

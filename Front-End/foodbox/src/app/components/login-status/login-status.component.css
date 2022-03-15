@@ -1,0 +1,13 @@
+.login{
+    background:#0a0a0a; 
+color:rgb(250, 245, 245); 
+height: 46px;
+
+}
+
+.logout{
+    background:black; 
+    color:white; 
+    height: 46px;
+
+}
